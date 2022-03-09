@@ -1,6 +1,6 @@
 import { Process, Processor } from '@nestjs/bull';
 import { Job } from 'bull';
-import { QueueActions, Queues } from '../config';
+import { QueueActions, Queues } from '../bull-queue/queue.models';
 
 @Processor(Queues.Message)
 export class SendMessageProcessor {
